@@ -21,6 +21,7 @@ python -m src.main --config config/settings.yaml
 ## Notes
 - V1 runs in `shadow` mode by default (`shadow_mode: true`) and produces signals only.
 - Secrets belong in `config/secrets.env` (not committed).
+<<<<<<< codex/build-automated-kalshi-trading-system-8yrxs3
 
 
 ## Current dependency posture
@@ -38,3 +39,5 @@ Run:
 cd kalshi-bot
 PYTHONPATH=. python -m unittest discover -s tests -v
 ```
+=======
+>>>>>>> main
