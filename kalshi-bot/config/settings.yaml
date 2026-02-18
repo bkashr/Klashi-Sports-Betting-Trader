@@ -1,0 +1,57 @@
+{
+  "mode": "paper",
+  "shadow_mode": true,
+  "kill_switch": true,
+  "trade_universe": {
+    "nba": true,
+    "soccer": true,
+    "soccer_leagues": ["EPL", "LaLiga", "Bundesliga", "SerieA", "Ligue1"]
+  },
+  "risk": {
+    "max_loss_day_usd": 25,
+    "max_loss_game_usd": 15,
+    "max_open_positions": 3,
+    "max_contracts_trade": 10,
+    "max_contracts_game": 20,
+    "cooldown_seconds_after_trade": 30
+  },
+  "execution": {
+    "use_limit_orders": true,
+    "cancel_after_seconds": 8,
+    "price_improve_ticks": 0,
+    "latency_penalty_seconds": 2,
+    "allow_partial_fill": true
+  },
+  "liquidity": {
+    "max_spread_cents": 6,
+    "min_top_depth_contracts": 50,
+    "stale_orderbook_seconds": 10,
+    "stale_game_state_seconds": 30
+  },
+  "strategy": {
+    "nba": {
+      "pregame_spread_max": 4.5,
+      "run_threshold": 6,
+      "lookback_game_clock_seconds": 120,
+      "snap_delta": 1.0,
+      "min_time_remaining_min": 12
+    },
+    "soccer": {
+      "edge_min": 0.05,
+      "net_edge_min": 0.02,
+      "red_card_filter": true
+    }
+  },
+  "fees": {
+    "model": "approximation",
+    "override_per_contract_cents": null
+  },
+  "database": {
+    "path": "data/kalshi_bot.db"
+  },
+  "runtime": {
+    "evaluation_interval_seconds": 0,
+    "loop_iterations": 5,
+    "dry_run_log_every": 1
+  }
+}

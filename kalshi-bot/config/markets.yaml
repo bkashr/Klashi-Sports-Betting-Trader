@@ -1,0 +1,26 @@
+{
+  "mappings": [
+    {
+      "game_id": "nba_game_1",
+      "sport": "nba",
+      "kalshi_ticker": "KXNBA-GAME1-SPR",
+      "market_type": "nba_spread",
+      "line_value": -2.5,
+      "side_convention": {
+        "fav_team": "HOME",
+        "dog_team": "AWAY",
+        "yes_means": "FAV_COVERS"
+      }
+    },
+    {
+      "game_id": "soccer_match_1",
+      "sport": "soccer",
+      "kalshi_ticker": "KXSOCCER-M1-OU25",
+      "market_type": "soccer_ou",
+      "line_value": 2.5,
+      "side_convention": {
+        "yes_means": "OVER"
+      }
+    }
+  ]
+}
